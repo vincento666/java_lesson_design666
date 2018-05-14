@@ -229,9 +229,9 @@ public class View {
 	        		    	newone.setHover();
 	        		    }
 	        		    
-    	        		if(contername.getValue()>=2) {//点击大于两次，生成新stage显示图片的详细信息
-    	        			newone.newStage();
-    	        		}
+//    	        		if(contername.getValue()>=2) {//点击大于两次，生成新stage显示图片的详细信息
+//    	        			newone.newStage();
+//    	        		}
 	        		}
 	        		
 	        		System.out.println(newone.getChose());
@@ -535,12 +535,13 @@ public class View {
 		      public void changed(ObservableValue<? extends TreeItem<File>> observable, TreeItem<File> oldValue,
 		          TreeItem<File> newValue) {
                 
-		    	 String Val=newValue.getValue().toString();
+		    	 String Val = newValue.getValue().toString();
 		    	 Img img = new Img(Val);
 		    	 imageList = img.getImageList();
 		    	 
 		    	 if(imageList != null && !(imageList.isEmpty())) {
 		    		 System.out.println(img.getImgListLength());
+		    		 System.out.println(imageList.get(0).impl_getUrl());
 		    	 }else {
 		    		 System.out.println(img.getImgListLength());
 		    	 }

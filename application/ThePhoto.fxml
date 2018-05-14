@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="489.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ThePhotoController">
+   <children>
+      <VBox fx:id="vboxImage" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ScrollPane prefHeight="272.0" prefWidth="591.0" VBox.vgrow="ALWAYS">
+               <content>
+                  <ImageView fx:id="viewPhoto" fitHeight="441.0" fitWidth="764.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+               </content>
+            </ScrollPane>
+            <HBox fx:id="hboxButton" alignment="CENTER" maxHeight="45.0" minHeight="45.0" minWidth="45.0" prefHeight="51.0" prefWidth="632.0" spacing="8.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button fx:id="lastPhoto" mnemonicParsing="false" onAction="#lastPhotoButton" text="上一张" />
+                  <Button fx:id="nextPhoto" mnemonicParsing="false" onAction="#nextPhotoButton" text="下一张" />
+                  <Button fx:id="oppositeCol" mnemonicParsing="false" onAction="#oppositeColButton" text="颜色反转" />
+                  <Button fx:id="grayCol" mnemonicParsing="false" onAction="#grayColButton" text="灰度处理" />
+                  <Button fx:id="rePhoto" mnemonicParsing="false" onAction="#rePhotoButton" text="还原图片" />
+                  <Button fx:id="outPhoto" mnemonicParsing="false" onAction="#outPhotoButton" text="导出图片" />
+                  <Button fx:id="enlargePhoto" mnemonicParsing="false" onAction="#enlargePhotoButton" text="放大" />
+                  <Button fx:id="narrowPhoto" mnemonicParsing="false" onAction="#narrowPhotoButton" text="缩小" />
+                  <Button fx:id="playPhoto" mnemonicParsing="false" onAction="#playPhotoButton" text="播放" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

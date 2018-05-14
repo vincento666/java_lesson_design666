@@ -93,7 +93,7 @@ public class TREE {
 					.observableArrayList();
 					for (File childFile : files) {
 						if(childFile.isDirectory()) {
-							//递归构建目录树
+							//递归构建目录�?
 							TreeItem<File> child = createNode(childFile);
 							child.setGraphic(createIcon("../image/folder.png"));
 							children.add(child);
